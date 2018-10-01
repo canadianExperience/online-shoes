@@ -1,0 +1,761 @@
+/* 
+Author: Elena Melnikova
+Author ID: 301025880
+Description: Styles for MAPD712 Assignment1 project
+Version: 1.0
+*/
+
+.row {
+    display: flex;
+    padding: 5px;
+    background-color: white;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+.logo {
+    vertical-align: middle;
+    margin-left: 10px;
+}
+
+.colHeader_2 {
+    align-content: center;
+    padding-right: 10px;
+    padding-left: 10px;
+    margin: auto;
+}
+
+.storeName {
+    text-align: center;
+    padding-right: 10px;
+    padding-left: 10px;
+}
+
+.slogan {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 100%;
+    text-align: center;
+    padding-right: 10px;
+    padding-left: 10px;
+}
+
+a:link {
+    text-decoration: none;
+}
+
+.logo {
+    border-radius: 25%;
+}
+
+/* On desktop screens that are 1200px wide or more, the background color is yellow */
+
+@media screen and (min-width: 1200px) {
+    body {
+        background-color: yellow;
+        display: flex;
+        flex-wrap: wrap;
+        /* Allow multiple lines */
+    }
+    .logo {
+        height: auto;
+        max-width: 120px;
+    }
+    h1 {
+        font-family: Arial, Helvetica, sans-serif;
+        ;
+        font-size: 2em;
+        color: darkblue;
+    }
+    h4 {
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 1em;
+    }
+    h5 {
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        font-size: 1.1em;
+        color: grey;
+    }
+    p, h3 {
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 1.6em;
+        font-weight: bold;
+    }
+    h3.chosen {
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        font-size: 2.5em;
+        color: black;
+        font-weight: bold;
+    }
+    .row2_1 {
+        width: 50%;
+        margin-bottom: 30px;
+    }
+    .row_2 {
+        display: flex;
+        flex-wrap: wrap;
+        margin-top: 180px;
+        margin-left: 10px;
+        margin-right: 10px;
+        width: 100%;
+    }
+    .row_2_order {
+        display: flex;
+        flex-wrap: wrap;
+        margin-top: 180px;
+        margin-left: 10px;
+        margin-right: 10px;
+        width: 100%;
+    }
+    .col-2, .col_param {
+        display: block;
+        width: 80%;
+        margin: 0 auto;
+    }
+    .shoes, .col_img {
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+        width: 50%
+    }
+    .productDescription {
+        text-align: justify;
+    }
+    .productTitle {
+        text-align: center;
+    }
+    .item {
+        width: 50%;
+    }
+    .row2_1_details {
+        margin-bottom: 30px;
+    }
+    .row2_1_order {
+        display: flex;
+        flex-direction: row;
+        margin-top: 30px;
+    }
+    .row2_1_order {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        margin-bottom: 30px;
+    }
+    .table_shoes_param {
+        display: table;
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .table_row_size, .table_row_color, .table_row_quantity {
+        display: table-row;
+    }
+    .table_cell_size_label, .table_cell_size, .table_cell_color_label, .table_cell_color, .table_cell_quantity_label, .table_cell_quantity {
+        display: table-cell;
+        padding: 10px;
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 1.2em;
+        border: 1px solid gainsboro;
+    }
+    select {
+        width: 100%;
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 1.2em;
+    }
+    .name {
+        text-align: center;
+        margin-top: 20px;
+        margin-bottom: 50px;
+    }
+    .ditales_button {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin-bottom: 30px;
+        margin-top: 30px;
+        width: 100%;
+    }
+    .submit_button, .cancel_button {
+        margin: 0 auto;
+        display: block;
+        align-items: center;
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 1.5em;
+    }
+    .table_row_status, .table_row_confirm_number, .table_row_subprice {
+        display: table-row;
+    }
+    .table_cell_status_label, .table_cell_status, .table_cell_confirm_number_label, .table_cell_confirm_number, .table_cell_subprice_label, .table_cell_subprice {
+        display: table-cell;
+        padding: 10px;
+        border: 1px solid gainsboro;
+        width: 50%;
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 1.6em;
+        font-weight: bold;
+    }
+    .table_order {
+        display: table;
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .table_row_order_name, .table_row_order_size, .table_row_order_color, .table_row_order_quantity, .table_row_order_price {
+        display: table-row;
+    }
+    .table_cell_order_name_label, .table_cell_order_name, .table_cell_order_size_label, .table_cell_order_size, .table_cell_order_color_label, .table_cell_order_color, .table_cell_order_quantity_label, .table_cell_order_quantity, .table_cell_order_price_label, .table_cell_order_price {
+        display: table-cell;
+        padding: 10px;
+        /* border: 1px solid; */
+        width: 50%;
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 1.2em
+    }
+    .table_total {
+        display: table;
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .table_row_total {
+        display: table-row;
+    }
+    .table_cell_total_label, .table_cell_total {
+        display: table-cell;
+        padding: 10px;
+        width: 50%;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        font-size: 2em;
+        color: black;
+        font-weight: bold;
+    }
+    .order_summary {
+        width: 100%;
+    }
+    .product_img {
+        /* width:50%; */
+        display: block;
+    }
+    .col_param_order {
+        display: block;
+        width: 50%;
+        margin: 0 auto;
+    }
+    .customer_form {
+        display: flex;
+        direction: row;
+        width: 100%;
+    }
+    .credit_card, .customer_info {
+        margin: 0 auto;
+        display: block;
+        align-items: center;
+        width: 50%;
+    }
+    .table_customer_info {
+        display: table;
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .table_row_first_name, .table_row_last_name, .table_row_delivery, .table_row_telephone_number {
+        display: table-row;
+    }
+    .table_cell_first_name_label, .table_cell_first_name, .table_cell_last_name_label, .table_cell_last_name, .table_cell_delivery_label, .table_cell_delivery, .table_cell_telephone_number_label, .table_cell_telephone_number {
+        display: table-cell;
+        padding: 10px;
+        width: 50%;
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 1.2em;
+    }
+    .table_credit_card_details {
+        display: table;
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .table_row_card_name, .table_row_credit_card_number, .table_row_exp_date, .table_row_cvv {
+        display: table-row;
+    }
+    .table_cell_card_name_label, .table_cell_card_name, .table_cell_credit_card_number_label, .table_cell_credit_card_number, .table_cell_exp_date_label, .table_cell_exp_date, .table_cell_cvv_label, .table_cell_cvv {
+        display: table-cell;
+        padding: 10px;
+        width: 50%;
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 1.2em;
+    }
+    .order_button {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin-bottom: 30px;
+        margin-top: 30px;
+        width: 100%;
+    }
+    .submit_button, .cancel_button {
+        margin: 0 auto;
+        display: block;
+        align-items: center;
+    }
+    .table_confirm {
+        display: table;
+        width: 100%;
+        margin-bottom: 20px;
+    }
+}
+
+/* On tablet screens that are 800-1200 wide, the background color is lightblue */
+
+@media screen and (min-width: 800px) and (max-width: 1199px) {
+    body {
+        background-color: lightblue;
+    }
+    .logo {
+        height: auto;
+        max-width: 120px;
+    }
+    h1 {
+        font-family: Arial, Helvetica, sans-serif;
+        ;
+        font-size: 1.5em;
+        color: darkblue;
+    }
+    h4 {
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 0.7em;
+    }
+    h5 {
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        font-size: 0.8em;
+        color: grey;
+    }
+    p, h3 {
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 2em;
+        font-weight: bold;
+    }
+    h3.chosen {
+        text-align: left;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        font-size: 2em;
+        color: black;
+        font-weight: bold;
+    }
+    .row_2 {
+        margin-top: 150px;
+        margin-bottom: 30px;
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .row2_1, .row2_1_details {
+        display: flex;
+        flex-direction: row;
+        margin-top: 30px;
+    }
+    .col-2, .col_param {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 50%;
+        height: auto;
+        margin-right: 20px;
+        margin-left: 20px;
+    }
+    .col-1 {
+        width: 50%;
+        margin-left: 20px;
+    }
+    .shoes, .col_img, .submit_img {
+        width: 80%;
+    }
+    .productTitle {
+        text-align: center;
+    }
+    .productDescription {
+        text-align: justify;
+    }
+    .ditales_button, .order_button {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin-bottom: 30px;
+        margin-top: 30px;
+        width: 100%;
+    }
+    .submit_button, .cancel_button {
+        margin: 0 auto;
+        display: block;
+        align-items: center;
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 1.5em;
+    }
+    .product_img, .order_img {
+        margin-left: 20px;
+    }
+    .table_shoes_param {
+        display: table;
+        width: 100%;
+    }
+    .table_row_size, .table_row_color, .table_row_quantity {
+        display: table-row;
+    }
+    .table_cell_size_label, .table_cell_size, .table_cell_color_label, .table_cell_color, .table_cell_quantity_label, .table_cell_quantity {
+        display: table-cell;
+        padding: 10px;
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 1.7em;
+    }
+    select {
+        width: 100%;
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 0.9em;
+    }
+    .name {
+        text-align: center;
+        margin-top: 10px;
+        margin-bottom: 50px;
+    }
+    .row2_1_order {
+        display: flex;
+        flex-direction: row;
+        margin-top: 30px;
+    }
+    .table_order {
+        display: table;
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .table_row_order_name, .table_row_order_size, .table_row_order_color, .table_row_order_quantity, .table_row_order_price {
+        display: table-row;
+    }
+    .table_cell_order_name_label, .table_cell_order_name, .table_cell_order_size_label, .table_cell_order_size, .table_cell_order_color_label, .table_cell_order_color, .table_cell_order_quantity_label, .table_cell_order_quantity, .table_cell_order_price_label, .table_cell_order_price {
+        display: table-cell;
+        padding: 10px;
+        border: 1px solid gray;
+        width: 50%;
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 1.2em;
+    }
+    .table_total {
+        display: table;
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .table_row_total {
+        display: table-row;
+    }
+    .table_cell_total_label, .table_cell_total {
+        display: table-cell;
+        padding: 10px;
+        width: 50%;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        font-size: 2em;
+        color: black;
+        font-weight: bold;
+    }
+    .table_customer_info {
+        display: table;
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .table_row_first_name, .table_row_last_name, .table_row_delivery, .table_row_telephone_number {
+        display: table-row;
+    }
+    .table_cell_first_name_label, .table_cell_first_name, .table_cell_last_name_label, .table_cell_last_name, .table_cell_delivery_label, .table_cell_delivery, .table_cell_telephone_number_label, .table_cell_telephone_number {
+        display: table-cell;
+        padding: 10px;
+        width: 50%;
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 1.2em;
+    }
+    .table_credit_card_details {
+        display: table;
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .table_row_card_name, .table_row_credit_card_number, .table_row_exp_date, .table_row_cvv {
+        display: table-row;
+    }
+    .table_cell_card_name_label, .table_cell_card_name, .table_cell_credit_card_number_label, .table_cell_credit_card_number, .table_cell_exp_date_label, .table_cell_exp_date, .table_cell_cvv_label, .table_cell_cvv {
+        display: table-cell;
+        padding: 10px;
+        width: 50%;
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 1.2em;
+    }
+    h3 {
+        text-align: center;
+    }
+    .customer_form {
+        display: flex;
+        direction: row;
+    }
+    .credit_card, .customer_info {
+        margin: 0 auto;
+        display: block;
+        align-items: center;
+    }
+    .table_confirm {
+        display: table;
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .table_row_status, .table_row_confirm_number, .table_row_subprice {
+        display: table-row;
+    }
+    .table_cell_status_label, .table_cell_status, .table_cell_confirm_number_label, .table_cell_confirm_number, .table_cell_subprice_label, .table_cell_subprice {
+        display: table-cell;
+        padding: 10px;
+        border: 1px solid gainsboro;
+        width: 50%;
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 1.4em;
+        font-weight: bold;
+    }
+    .col_param_order {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 50%;
+        height: auto;
+        margin-right: 20px;
+        margin-left: 20px;
+    }
+    .row_2_order {
+        margin-top: 150px;
+        margin-bottom: 30px;
+    }
+}
+
+/* On phone screens that are 799px wide or less, the background color is green */
+
+@media screen and (max-width: 799px) {
+    body {
+        background-color: lightgreen;
+        min-width: 200px;
+    }
+    a {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+    }
+    h1 {
+        font-family: Arial, Helvetica, sans-serif;
+        ;
+        font-size: 2em;
+        color: darkblue;
+        font-weight: bold;
+    }
+    h4 {
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 0.5em;
+    }
+    h5 {
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        font-size: 0.6em;
+        color: grey;
+    }
+    p, h3 {
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 1.7em;
+        font-weight: bold;
+    }
+    h3.chosen {
+        text-align: center;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        font-size: 1.6em;
+        color: black;
+        font-weight: bold;
+    }
+    .row_2 {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin-top: 150px;
+        margin-right: 10px;
+        margin-left: 10px;
+    }
+    .row_2_order {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin-top: 150px;
+        margin-right: 10px;
+        margin-left: 10px;
+    }
+    /* https://stackoverflow.com/questions/20626685/better-way-to-set-distance-between-flexbox-items */
+    .row_2>a {
+        box-sizing: border-box;
+        width: 100%;
+        height: fit-content;
+    }
+    .colHeader_1 {
+        display: none;
+    }
+    .colHeader_2 {
+        width: 100%;
+    }
+    .col-1, .product_img {
+        width: 100%;
+        align-content: center;
+    }
+    .shoes, .col_img, .order_img {
+        max-width: 100%;
+        min-width: 170px;
+        height: auto;
+    }
+    .col-2 {
+        width: 100%;
+        text-align: center;
+    }
+    .col-21 {
+        width: 100%;
+    }
+    .col-22 {
+        width: 100%;
+        display: none;
+    }
+    .col_param {
+        display: flex;
+        flex-direction: column;
+    }
+    .name {
+        text-align: center;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    .ditales_button, .order_button {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin-bottom: 30px;
+        margin-top: 30px;
+        width: 100%;
+    }
+    .submit_button, .cancel_button {
+        margin: 0 auto;
+        display: block;
+        align-items: center;
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 1.1em;
+    }
+    .table_shoes_param {
+        display: table;
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .table_row_size, .table_row_color, .table_row_quantity {
+        display: table-row;
+    }
+    .table_cell_size_label, .table_cell_size, .table_cell_color_label, .table_cell_color, .table_cell_quantity_label, .table_cell_quantity {
+        display: table-cell;
+        padding: 10px;
+    }
+    select {
+        width: 100%;
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 1em;
+    }
+}
+
+.table_order {
+    display: table;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.table_row_order_name, .table_row_order_size, .table_row_order_color, .table_row_order_quantity, .table_row_order_price {
+    display: table-row;
+}
+
+.table_cell_order_name_label, .table_cell_order_name, .table_cell_order_size_label, .table_cell_order_size, .table_cell_order_color_label, .table_cell_order_color, .table_cell_order_quantity_label, .table_cell_order_quantity, .table_cell_order_price_label, .table_cell_order_price {
+    display: table-cell;
+    padding: 10px;
+    border: 1px solid gray;
+    width: 50%;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1.1em;
+}
+
+.table_total {
+    display: table;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.table_row_total {
+    display: table-row;
+}
+
+.table_cell_total_label, .table_cell_total {
+    display: table-cell;
+    padding: 10px;
+    border: 1px solid gray;
+    width: 50%;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 1.5em;
+    color: black;
+    font-weight: bold;
+}
+
+.table_customer_info {
+    display: table;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.table_row_first_name, .table_row_last_name, .table_row_delivery, .table_row_telephone_number {
+    display: table-row;
+}
+
+.table_cell_first_name_label, .table_cell_first_name, .table_cell_last_name_label, .table_cell_last_name, .table_cell_delivery_label, .table_cell_delivery, .table_cell_telephone_number_label, .table_cell_telephone_number {
+    display: table-cell;
+    padding: 10px;
+    width: 50%;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1.1em;
+}
+
+.table_credit_card_details {
+    display: table;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.table_row_card_name, .table_row_credit_card_number, .table_row_exp_date, .table_row_cvv {
+    display: table-row;
+}
+
+.table_cell_card_name_label, .table_cell_card_name, .table_cell_credit_card_number_label, .table_cell_credit_card_number, .table_cell_exp_date_label, .table_cell_exp_date, .table_cell_cvv_label, .table_cell_cvv {
+    display: table-cell;
+    padding: 10px;
+    width: 50%;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1.1em;
+}
+
+h3 {
+    text-align: center;
+}
+
+.table_confirm {
+    display: table;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.table_row_status, .table_row_confirm_number, .table_row_subprice {
+    display: table-row;
+}
+
+.table_cell_status_label, .table_cell_status, .table_cell_confirm_number_label, .table_cell_confirm_number, .table_cell_subprice_label, .table_cell_subprice {
+    display: table-cell;
+    padding: 10px;
+    border: 1px solid gainsboro;
+    width: 50%;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1.6em;
+    font-weight: bold;
+}
+
